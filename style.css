@@ -185,8 +185,9 @@ footer {
     line-height: 1.8;
 }
 
-@media (max-width: 600px) {
-    nav {
+@media (max-width: 600px) 
+{
+    .nav-links {
         padding: 15px 5%;
     }
 
@@ -205,6 +206,8 @@ footer {
     .hero h2 {
         font-size: 20px;
     }
+}
+    
     /* About */
 #about {
     padding: 100px 10%;
@@ -417,40 +420,25 @@ footer {
         height: 140px;
     }
 }
-/* Ukuran gambar project di laptop/desktop */
-@media (min-width: 569px) {
-    .project-card img {
-        width: 150px;
-        max-width: 100%;
-        height: auto;
-        display: block;
-        margin: auto;
-    }
-
-    .project-card {
-        text-align: center;
-    }
-
-}
-/* KHUSUS GAMBAR PROJECT DI DESKTOP */
-@media (min-width: 769px) {
-    .project-card img {
-        width: 250px !important;
-        max-width: 250px !important;
-        height: auto !important;
-        display: block;
-        margin: 0 auto;
-    }
-}
-/* Thumbnail project desktop */
+/* Ukuran thumbnail project */
 @media (min-width: 769px) {
     .projects-container .project-card > img {
-        width: 250px !important;
-        height: 150px !important;
+        width: 150px !important;
+        height: 100px !important;
+        object-fit: cover !important;
+        display: block !important;
+        margin: 0 auto 15px auto !important;
+    }
+}
+/* FIX THUMBNAIL PROJECT DESKTOP */
+@media (min-width: 769px) {
+    #projects .projects-container .project-card img {
+        width: 150px !important;
+        height: 100px !important;
+        max-width: 150px !important;
         object-fit: cover !important;
         display: block !important;
         margin: 0 auto 15px auto !important;
     }
 }
 
-}
