@@ -418,17 +418,38 @@ footer {
     }
 }
 /* Ukuran gambar project di laptop/desktop */
-@media (min-width: 769px) {
+@media (min-width: 569px) {
     .project-card img {
-        width: 500px;
+        width: 150px;
         max-width: 100%;
         height: auto;
         display: block;
-        margin: 0 auto;
+        margin: auto;
     }
 
     .project-card {
         text-align: center;
+    }
+
+}
+/* KHUSUS GAMBAR PROJECT DI DESKTOP */
+@media (min-width: 769px) {
+    .project-card img {
+        width: 250px !important;
+        max-width: 250px !important;
+        height: auto !important;
+        display: block;
+        margin: 0 auto;
+    }
+}
+/* Thumbnail project desktop */
+@media (min-width: 769px) {
+    .projects-container .project-card > img {
+        width: 250px !important;
+        height: 150px !important;
+        object-fit: cover !important;
+        display: block !important;
+        margin: 0 auto 15px auto !important;
     }
 }
 
