@@ -417,4 +417,19 @@ footer {
         height: 140px;
     }
 }
+/* Ukuran gambar project di laptop/desktop */
+@media (min-width: 769px) {
+    .project-card img {
+        width: 500px;
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .project-card {
+        text-align: center;
+    }
+}
+
 }
