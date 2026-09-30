@@ -514,7 +514,7 @@ footer {
    FINAL FIX MOBILE HOME
 ========================= */
 
-@@media (max-width: 768px) {
+@media (max-width: 768px) {
 
     .hero {
         min-height: auto !important;
