@@ -416,5 +416,50 @@ footer {
     border-radius: 12px;
     margin-bottom: 15px;
 }
+/* FIX UKURAN GAMBAR PROJECT */
+.projects-container {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 25px !important;
+    max-width: 1000px !important;
+    margin: auto !important;
+}
 
+.projects-container img {
+    width: 100% !important;
+    height: 160px !important;
+    object-fit: cover !important;
+    border-radius: 12px !important;
+    display: block !important;
+}
+
+.project-card {
+    width: 100% !important;
+    max-width: 310px !important;
+    margin: auto !important;
+    overflow: hidden !important;
+}
+
+.project-card img {
+    width: 100% !important;
+    height: 160px !important;
+    object-fit: cover !important;
+}
+
+/* HP */
+@media (max-width: 768px) {
+    .projects-container {
+        grid-template-columns: 1fr !important;
+        max-width: 350px !important;
+    }
+
+    .project-card {
+        max-width: 350px !important;
+    }
+
+    .projects-container img,
+    .project-card img {
+        height: 160px !important;
+    }
+}
 }
