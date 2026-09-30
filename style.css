@@ -240,22 +240,12 @@ footer {
     line-height: 1.8;
 }
 /* Projects */
-#projects {
-    padding: 100px 10%;
-    text-align: center;
-}
-
-#projects h2 {
-    font-size: 40px;
-    margin-bottom: 50px;
-}
-
 .projects-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
     max-width: 1100px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .project-card {
@@ -263,6 +253,7 @@ footer {
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    text-align: center;
     transition: transform 0.3s ease;
 }
 
@@ -271,13 +262,10 @@ footer {
 }
 
 .project-card h3 {
-    font-size: 22px;
     margin-bottom: 15px;
 }
 
 .project-card p {
-    color: #555;
-    line-height: 1.6;
     margin-bottom: 20px;
 }
 
@@ -288,10 +276,16 @@ footer {
     color: white;
     text-decoration: none;
     border-radius: 8px;
-    transition: 0.3s;
 }
 
 .project-button:hover {
     background: #1d4ed8;
+}
+
+/* Untuk HP */
+@media (max-width: 768px) {
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
 }
 }
