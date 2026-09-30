@@ -582,9 +582,9 @@ footer {
 
     .hero-image img {
         display: block !important;
-        width: 210px !important;
-        height: 210px !important;
-        max-width: 210px !important;
+        width: 150px !important;
+        height: 150px !important;
+        max-width: 150px !important;
         object-fit: cover !important;
         border-radius: 50% !important;
         margin: 0 auto !important;
