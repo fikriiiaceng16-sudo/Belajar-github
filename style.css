@@ -473,6 +473,44 @@ footer {
     background-color: #2563eb;
     color: white;
 }
+/* FIX HERO DESKTOP */
+@media (min-width: 769px) {
+
+    .hero {
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 80px !important;
+    }
+
+    .hero-image img {
+        width: 280px !important;
+        height: 280px !important;
+        max-width: 280px !important;
+        object-fit: cover !important;
+        border-radius: 50% !important;
+        display: block !important;
+    }
+}
+
+/* FIX HERO MOBILE */
+@media (max-width: 768px) {
+
+    .hero {
+        flex-direction: column-reverse !important;
+    }
+
+    .hero-image img {
+        width: 210px !important;
+        height: 210px !important;
+        max-width: 210px !important;
+        object-fit: cover !important;
+        border-radius: 50% !important;
+    }
+}
+.hero h1 {
+    white-space: nowrap;
+}
 
 }
 
