@@ -248,7 +248,7 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
     max-width: 1100px;
-    margin: 0 auto;
+    margin: auto;
 }
 
 .project-card {
@@ -279,6 +279,13 @@ footer {
     color: white;
     text-decoration: none;
     border-radius: 8px;
+}
+.projects-container {
+    grid-template-columns: 1fr;
+}
+
+.project-card img {
+    height: 180px;
 }
 
 .project-button:hover {
@@ -351,6 +358,13 @@ footer {
     .hero h2 {
         font-size: 22px;
     }
+    .project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+}
 }
 
 /* FIX TAMPILAN ABOUT DI HP */
