@@ -3,31 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Website Pertama Saya</title>
-
+    <title>Portfolio Fikri</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div class="container">
+    <nav>
+        <h2>Fikri.</h2>
 
-        <h1>Halo, saya Fikri! 👋</h1>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <p class="greeting">👋 Halo, saya</p>
+
+        <h1>Fikri</h1>
+
+        <h2>Mahasiswa & Web Developer</h2>
 
         <p>
-            Ini adalah website pertama saya menggunakan HTML,
-            CSS, dan GitHub.
+            Saya sedang belajar HTML, CSS,
+            untuk membuat website.
         </p>
 
-        <h2>Saya lulusan teknik pemesinan yang belajar di bidang IT, sekarang saya sedang kuliah di UBSI Kaliabang, sekarang saya semester 1</h2>
+        <a href="#about" class="button">Kenal Saya</a>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
 
         <p>
-            Saya sedang belajar membuat website
-            dan menggunakan GitHub.
+            Saya lulusan teknik permesinan yang sekarang sedang
+            kuliah di UBSI Kalibaru. Saya tertarik dengan dunia
+            teknologi dan sedang belajar menjadi web developer.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+
+        <div class="skills">
+            <div>HTML</div>
+            <div>CSS</div>
+            <div>Git</div>
+            <div>Network Engineer</div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+
+        <p>
+            Terima kasih sudah mengunjungi website saya.
         </p>
 
-    </div>
+        <a href="mailto:fikriaff21@gmail.com" class="button">
+            Hubungi Saya
+        </a>
+    </section>
+
+    <footer>
+        <p>© 2026 Fikri. Dibuat dengan HTML, CSS & GitHub.</p>
+    </footer>
 
 </body>
 </html>
