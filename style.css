@@ -352,4 +352,47 @@ footer {
         font-size: 22px;
     }
 }
+
+/* FIX TAMPILAN ABOUT DI HP */
+@media screen and (max-width: 768px) {
+
+    #about .about-container {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 30px !important;
+    }
+
+    #about .about-image {
+        width: 250px !important;
+        height: 250px !important;
+        margin: 0 auto !important;
+    }
+
+    #about .about-image img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        border-radius: 50% !important;
+    }
+
+    #about .about-text {
+        width: 90% !important;
+        max-width: 600px !important;
+        text-align: center !important;
+        margin: 0 auto !important;
+    }
+
+    #about .about-text h2 {
+        font-size: 32px !important;
+        margin-bottom: 20px !important;
+    }
+
+    #about .about-text p {
+        font-size: 16px !important;
+        line-height: 1.8 !important;
+        margin-bottom: 18px !important;
+    }
+}
 }
