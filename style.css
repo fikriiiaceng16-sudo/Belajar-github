@@ -1288,7 +1288,36 @@ footer {
     .id-info p {
         font-size: 12px !important;
     }
+/* =========================================
+   HERO BADGE
+========================================= */
 
+.hero-badge {
+    display: inline-block;
+
+    margin-bottom: 18px;
+    padding: 7px 14px;
+
+    color: #60a5fa;
+    background: rgba(37, 99, 235, 0.10);
+
+    border: 1px solid rgba(96, 165, 250, 0.35);
+    border-radius: 999px;
+
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.hero-badge span {
+    margin: 0 5px;
+    color: #334b73;
+}
+.hero-badge {
+    font-size: 10px !important;
+    padding: 6px 12px !important;
+    margin-bottom: 15px !important;
+}
 }
 
 
