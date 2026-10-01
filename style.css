@@ -577,7 +577,719 @@ footer {
         font-size: 13px !important;
     }
 }
+    /* ========================================
+   DARK NAVY HERO + ID CARD
+======================================== */
 
+.hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+
+    padding: 80px 8%;
+
+    background:
+        radial-gradient(
+            circle at 80% 50%,
+            rgba(37, 99, 235, 0.18),
+            transparent 35%
+        ),
+        #070d1a;
+
+    color: white;
+}
+
+
+/* ========================================
+   HERO CONTENT
+======================================== */
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero .greeting {
+    font-size: 20px;
+    color: #bfdbfe;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 58px;
+    line-height: 1.1;
+    margin: 10px 0 20px;
+
+    color: white;
+}
+
+.hero h1 span {
+    color: #2563eb;
+}
+
+.hero h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+    color: #e5e7eb;
+}
+
+.hero-description {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #b8c4d6;
+
+    max-width: 600px;
+}
+
+
+/* ========================================
+   BUTTON
+======================================== */
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.hero-button {
+    display: inline-block;
+
+    padding: 14px 25px;
+
+    background: #2563eb;
+    color: white;
+
+    text-decoration: none;
+
+    border: 2px solid #2563eb;
+    border-radius: 10px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.hero-button:hover {
+    background: #1d4ed8;
+    transform: translateY(-3px);
+}
+
+.hero-button.secondary {
+    background: transparent;
+    color: #60a5fa;
+    border-color: #2563eb;
+}
+
+.hero-button.secondary:hover {
+    background: #2563eb;
+    color: white;
+}
+
+
+/* ========================================
+   ID CARD
+======================================== */
+
+.id-card {
+
+    width: 430px;
+    min-height: 250px;
+
+    padding: 25px;
+
+    position: relative;
+
+    background:
+        linear-gradient(
+            135deg,
+            #111c31,
+            #0b1220
+        );
+
+    border: 2px solid #334b73;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.45),
+        0 0 30px rgba(37, 99, 235, 0.12);
+
+    overflow: hidden;
+}
+
+
+/* garis biru dekorasi */
+
+.id-card::before {
+    content: "";
+
+    position: absolute;
+
+    width: 180px;
+    height: 180px;
+
+    background: #2563eb;
+
+    opacity: 0.12;
+
+    border-radius: 50%;
+
+    right: -80px;
+    top: -80px;
+}
+
+
+/* ========================================
+   CARD TOP
+======================================== */
+
+.id-card-top {
+    margin-bottom: 20px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.id-card-top span {
+    font-size: 14px;
+    font-weight: bold;
+
+    color: #60a5fa;
+
+    letter-spacing: 2px;
+}
+
+
+/* ========================================
+   CARD CONTENT
+======================================== */
+
+.id-card-content {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+
+    position: relative;
+    z-index: 2;
+}
+
+
+/* foto */
+
+.id-photo img {
+    width: 145px;
+    height: 165px;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+
+    border: 2px solid #2563eb;
+
+    display: block;
+}
+
+
+/* informasi */
+
+.id-info h3 {
+    font-size: 25px;
+
+    color: white;
+
+    margin: 0 0 15px;
+}
+
+.id-info p {
+    margin: 10px 0;
+
+    font-size: 14px;
+
+    color: #cbd5e1;
+}
+
+
+/* ========================================
+   CARD BOTTOM
+======================================== */
+
+.id-card-bottom {
+
+    margin-top: 20px;
+    padding-top: 15px;
+
+    border-top: 1px solid #334155;
+
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 11px;
+
+    color: #64748b;
+
+    letter-spacing: 1px;
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 768px) {
+
+    .hero {
+        min-height: auto !important;
+
+        flex-direction: column !important;
+
+        gap: 40px !important;
+
+        text-align: center !important;
+
+        padding: 60px 20px !important;
+    }
+
+
+    .hero-content {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+
+    .hero h1 {
+        font-size: 38px !important;
+        white-space: normal !important;
+    }
+
+
+    .hero h2 {
+        font-size: 22px !important;
+    }
+
+
+    .hero-description {
+        font-size: 15px !important;
+    }
+
+
+    .hero-buttons {
+        justify-content: center !important;
+
+        flex-wrap: wrap;
+
+        gap: 10px !important;
+    }
+
+
+    /* ID CARD HP */
+
+    .id-card {
+        width: 100% !important;
+
+        max-width: 390px !important;
+
+        box-sizing: border-box;
+
+        text-align: left !important;
+    }
+
+
+    .id-card-content {
+        gap: 15px;
+    }
+
+
+    .id-photo img {
+        width: 110px;
+        height: 130px;
+    }
+
+
+    .id-info h3 {
+        font-size: 20px;
+    }
+
+
+    .id-info p {
+        font-size: 12px;
+    }
+
+}
+/* =========================================
+   FINAL FIX - DARK HERO + ID CARD
+========================================= */
+
+.hero {
+    background: #070d1a !important;
+    color: rgb(22, 23, 128) !important;
+
+    min-height: 85vh !important;
+    height: auto !important;
+
+    display: flex !important;
+    flex-direction: row !important;
+
+    align-items: center !important;
+    justify-content: center !important;
+
+    gap: 70px !important;
+
+    padding: 80px 8% !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* ---------- TEXT ---------- */
+
+.hero-content {
+    width: auto !important;
+    max-width: 600px !important;
+}
+
+.hero .greeting {
+    color: #bfdbfe !important;
+}
+
+.hero h1 {
+    color: white !important;
+    font-size: 58px !important;
+}
+
+.hero h1 span {
+    color: #2563eb !important;
+}
+
+.hero h2 {
+    color: #e5e7eb !important;
+}
+
+.hero-description {
+    color: #b8c4d6 !important;
+}
+
+
+/* ---------- BUTTON ---------- */
+
+.hero-buttons {
+    display: flex !important;
+    gap: 15px !important;
+    justify-content: flex-start !important;
+}
+
+.hero-button {
+    display: inline-block !important;
+
+    padding: 14px 25px !important;
+
+    background: #2563eb !important;
+    color: rgb(27, 34, 138) !important;
+
+    text-decoration: none !important;
+
+    border: 2px solid #2563eb !important;
+    border-radius: 10px !important;
+}
+
+.hero-button.secondary {
+    background: transparent !important;
+    color: #60a5fa !important;
+}
+
+
+/* =========================================
+   ID CARD
+========================================= */
+
+/* =========================================
+   HERO + ID CARD FINAL
+========================================= */
+
+.hero {
+    min-height: 85vh !important;
+    width: 100% !important;
+    max-width: none !important;
+
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    gap: 70px !important;
+    padding: 80px 8% !important;
+
+    box-sizing: border-box !important;
+
+    background: #070d1a !important;
+    color: white !important;
+
+    text-align: left !important;
+}
+
+.hero-content {
+    width: 500px !important;
+    max-width: 500px !important;
+}
+
+.hero .greeting {
+    color: #60a5fa !important;
+    font-size: 20px !important;
+    margin: 0 0 15px !important;
+}
+
+.hero h1 {
+    color: white !important;
+    font-size: 58px !important;
+    line-height: 1.1 !important;
+    margin: 0 0 15px !important;
+    white-space: nowrap !important;
+}
+
+.hero h2 {
+    color: #60a5fa !important;
+    font-size: 28px !important;
+    margin: 0 0 20px !important;
+}
+
+.hero-description {
+    color: #cbd5e1 !important;
+    font-size: 17px !important;
+    line-height: 1.7 !important;
+    max-width: 500px !important;
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.hero-buttons {
+    display: flex !important;
+    justify-content: flex-start !important;
+    gap: 15px !important;
+    margin-top: 30px !important;
+}
+
+.hero-button {
+    display: inline-block !important;
+
+    padding: 13px 25px !important;
+
+    background: #2563eb !important;
+    color: white !important;
+
+    border: 2px solid #2563eb !important;
+    border-radius: 8px !important;
+
+    text-decoration: none !important;
+}
+
+.hero-button.secondary {
+    background: transparent !important;
+    color: #60a5fa !important;
+}
+
+
+/* =========================================
+   ID CARD
+========================================= */
+
+.id-card {
+    width: 430px !important;
+    min-width: 430px !important;
+
+    padding: 25px !important;
+
+    box-sizing: border-box !important;
+
+    background: linear-gradient(
+        135deg,
+        #111c31,
+        #0b1220
+    ) !important;
+
+    border: 2px solid #334b73 !important;
+    border-radius: 18px !important;
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,0.45),
+        0 0 30px rgba(37,99,235,0.15) !important;
+
+    color: white !important;
+
+    overflow: hidden !important;
+}
+
+
+/* =========================================
+   ID CARD HEADER
+========================================= */
+
+.id-card-top {
+    display: flex !important;
+    justify-content: space-between !important;
+
+    padding-bottom: 15px !important;
+    margin-bottom: 20px !important;
+
+    border-bottom: 1px solid #334155 !important;
+}
+
+.id-card-top span {
+    color: #60a5fa !important;
+
+    font-size: 14px !important;
+    font-weight: bold !important;
+
+    letter-spacing: 2px !important;
+}
+
+
+/* =========================================
+   FOTO + INFORMASI
+========================================= */
+
+.id-card-content {
+    display: flex !important;
+    align-items: center !important;
+
+    gap: 22px !important;
+}
+
+.id-card-content img {
+    width: 145px !important;
+    height: 165px !important;
+
+    max-width: 145px !important;
+    max-height: 165px !important;
+
+    object-fit: cover !important;
+
+    display: block !important;
+
+    border-radius: 12px !important;
+    border: 2px solid #2563eb !important;
+
+    flex-shrink: 0 !important;
+}
+
+.id-info {
+    flex: 1 !important;
+}
+
+.id-info h3 {
+    color: white !important;
+
+    font-size: 25px !important;
+
+    margin: 0 0 15px !important;
+}
+
+.id-info p {
+    color: #cbd5e1 !important;
+
+    font-size: 14px !important;
+
+    margin: 10px 0 !important;
+}
+
+
+/* =========================================
+   ID CARD FOOTER
+========================================= */
+
+.id-card-bottom {
+    display: flex !important;
+    justify-content: space-between !important;
+
+    margin-top: 20px !important;
+    padding-top: 15px !important;
+
+    border-top: 1px solid #334155 !important;
+
+    color: #64748b !important;
+
+    font-size: 11px !important;
+
+    letter-spacing: 1px !important;
+}
+
+.id-card-bottom strong {
+    color: #60a5fa !important;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .hero {
+        min-height: auto !important;
+
+        flex-direction: column !important;
+
+        gap: 35px !important;
+
+        padding: 60px 20px !important;
+
+        text-align: center !important;
+    }
+
+    .hero-content {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .hero h1 {
+        font-size: 38px !important;
+        white-space: normal !important;
+    }
+
+    .hero h2 {
+        font-size: 22px !important;
+    }
+
+    .hero-description {
+        font-size: 16px !important;
+    }
+
+    .hero-buttons {
+        justify-content: center !important;
+        flex-wrap: wrap !important;
+    }
+
+    .id-card {
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 390px !important;
+    }
+
+    .id-card-content {
+        flex-direction: column !important;
+        text-align: center !important;
+    }
+
+    .id-card-content img {
+        width: 110px !important;
+        height: 130px !important;
+
+        max-width: 110px !important;
+        max-height: 130px !important;
+    }
+
+    .id-info h3 {
+        font-size: 20px !important;
+    }
+
+    .id-info p {
+        font-size: 12px !important;
+    }
+
+}
 
 
 
