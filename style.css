@@ -2052,7 +2052,109 @@ footer {
     }
 
 }
+/* =========================================
+   FIX SKILLS MOBILE
+========================================= */
 
+@media (max-width: 768px) {
+
+    #skills.skills-section {
+        width: 100% !important;
+        box-sizing: border-box !important;
+        padding: 80px 20px !important;
+
+        background: #070d1a !important;
+        color: white !important;
+    }
+
+    #skills .section-title {
+        width: 100% !important;
+        text-align: center !important;
+        margin-bottom: 40px !important;
+    }
+
+    #skills .section-title span {
+        color: #60a5fa !important;
+    }
+
+    #skills .section-title h2 {
+        color: white !important;
+        font-size: 34px !important;
+        margin: 10px 0 !important;
+    }
+
+    #skills .section-title p {
+        color: #64748b !important;
+        font-size: 14px !important;
+    }
+
+    /* GRID */
+
+    #skills .skills-container {
+        width: 100% !important;
+        max-width: 450px !important;
+
+        margin: 0 auto !important;
+
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+
+        gap: 18px !important;
+    }
+
+    /* CARD */
+
+    #skills .skill-card {
+        width: 100% !important;
+        box-sizing: border-box !important;
+
+        padding: 25px !important;
+
+        background: linear-gradient(
+            145deg,
+            #111c31,
+            #0b1220
+        ) !important;
+
+        border: 1px solid #243b5a !important;
+        border-radius: 16px !important;
+
+        transform: none !important;
+    }
+
+    #skills .skill-card:hover {
+        transform: translateY(-5px) !important;
+
+        border-color: #2563eb !important;
+    }
+
+    #skills .skill-icon {
+        width: 55px !important;
+        height: 55px !important;
+
+        margin-bottom: 18px !important;
+
+        font-size: 27px !important;
+    }
+
+    #skills .skill-card h3 {
+        color: white !important;
+        font-size: 21px !important;
+        margin-bottom: 10px !important;
+    }
+
+    #skills .skill-card p {
+        color: #94a3b8 !important;
+        font-size: 14px !important;
+        line-height: 1.7 !important;
+    }
+
+    #skills .skill-level {
+        color: #60a5fa !important;
+        font-size: 11px !important;
+    }
+
+}
 
 
 
