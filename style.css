@@ -1288,6 +1288,14 @@ footer {
     .id-info p {
         font-size: 12px !important;
     }
+    .id-card:hover {
+    transform: none !important;
+}
+
+.id-card:hover .id-card-content img {
+    transform: none !important;
+}
+}
 /* =========================================
    HERO BADGE
 ========================================= */
@@ -1318,7 +1326,246 @@ footer {
     padding: 6px 12px !important;
     margin-bottom: 15px !important;
 }
+/* =========================================
+   ID CARD GLOW EFFECT
+========================================= */
+
+.id-card {
+    transition: 
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease !important;
 }
+
+/* Glow halus di belakang card */
+.id-card::before {
+    content: "";
+
+    position: absolute;
+
+    width: 180px;
+    height: 180px;
+
+    top: -80px;
+    right: -60px;
+
+    background: rgba(37, 99, 235, 0.20);
+
+    border-radius: 50%;
+
+    filter: blur(35px);
+
+    pointer-events: none;
+}
+
+
+/* Hover card */
+
+.id-card:hover {
+    transform: translateY(-8px) !important;
+
+    border-color: #3b82f6 !important;
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.55),
+        0 0 35px rgba(37, 99, 235, 0.25) !important;
+}
+/* =========================================
+   PROFILE PHOTO EFFECT
+========================================= */
+
+.id-card-content img {
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease !important;
+}
+
+.id-card:hover .id-card-content img {
+    transform: scale(1.03) !important;
+
+    box-shadow:
+        0 0 20px rgba(37, 99, 235, 0.30) !important;
+}
+/* =========================================
+   HERO BACKGROUND PREMIUM
+========================================= */
+
+.hero {
+    position: relative !important;
+    overflow: hidden !important;
+
+    background:
+        radial-gradient(
+            circle at 75% 45%,
+            rgba(37, 99, 235, 0.16),
+            transparent 32%
+        ),
+        radial-gradient(
+            circle at 15% 70%,
+            rgba(37, 99, 235, 0.08),
+            transparent 28%
+        ),
+        #070d1a !important;
+}
+
+
+/* =========================================
+   GRID BACKGROUND
+========================================= */
+
+.hero::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background-image:
+        linear-gradient(
+            rgba(96, 165, 250, 0.035) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(96, 165, 250, 0.035) 1px,
+            transparent 1px
+        );
+
+    background-size: 45px 45px;
+
+    pointer-events: none;
+
+    mask-image: linear-gradient(
+        to bottom,
+        black,
+        transparent 90%
+    );
+}
+
+
+/* =========================================
+   HERO CONTENT DI ATAS BACKGROUND
+========================================= */
+
+.hero-content,
+.id-card {
+    position: relative !important;
+    z-index: 2 !important;
+}
+/* =========================================
+   HERO BACKGROUND PREMIUM
+========================================= */
+
+.hero {
+    position: relative !important;
+    overflow: hidden !important;
+
+    background:
+        radial-gradient(
+            circle at 75% 45%,
+            rgba(37, 99, 235, 0.16),
+            transparent 32%
+        ),
+        radial-gradient(
+            circle at 15% 70%,
+            rgba(37, 99, 235, 0.08),
+            transparent 28%
+        ),
+        #070d1a !important;
+}
+
+
+/* =========================================
+   GRID BACKGROUND
+========================================= */
+
+.hero::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background-image:
+        linear-gradient(
+            rgba(96, 165, 250, 0.035) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(96, 165, 250, 0.035) 1px,
+            transparent 1px
+        );
+
+    background-size: 45px 45px;
+
+    pointer-events: none;
+
+    mask-image: linear-gradient(
+        to bottom,
+        black,
+        transparent 90%
+    );
+}
+
+
+/* =========================================
+   HERO CONTENT DI ATAS BACKGROUND
+========================================= */
+
+.hero-content,
+.id-card {
+    position: relative !important;
+    z-index: 2 !important;
+}
+/* =========================================
+   SCROLL INDICATOR
+========================================= */
+
+.scroll-indicator span {
+    display: block !important;
+    color: #60a5fa !important;
+    font-size: 28px !important;
+    animation: scrollDown 1.8s infinite ease-in-out !important;
+}
+
+.scroll-indicator p {
+    margin: 5px 0 0 !important;
+    font-size: 12px !important;
+    letter-spacing: 1px !important;
+}
+
+
+@keyframes scrollDown {
+
+    0%, 100% {
+        transform: translateY(0);
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: translateY(7px);
+        opacity: 1;
+    }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .scroll-indicator {
+        position: relative !important;
+
+        bottom: auto !important;
+        left: auto !important;
+
+        transform: none !important;
+
+        margin-top: 20px !important;
+    }
+
+}
+
 
 
 
